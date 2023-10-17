@@ -30,7 +30,7 @@ Those changes would make it simpler to use Hoon parsers to process non-Hoon file
 
 ## Specification
 
-# `edge` update
+### `edge` update
 
 In addition to parsing result `edge` must also contain an error message if parsing failed:
 ```
@@ -41,7 +41,7 @@ In addition to parsing result `edge` must also contain an error message if parsi
   ==
 ```
 
-# Standart library parsing rules
+### Standart library parsing rules
 
 Each parsing rule should return an error message if it failed. Some examples:
 ```
@@ -62,7 +62,7 @@ Each parsing rule should return an error message if it failed. Some examples:
   (next tub)
 ```
 
-# Standart library parsing composers
+### Standart library parsing composers
 
 Parsing composers should somehow combine the error messages, e.g. if `;~(pose (just 'a') (just 'b'))` failed to parse, we should get something like: `"want 'a' or 'b', got 'c'"`. That means that `edge` described above is not suitable, something else should be defined
 
