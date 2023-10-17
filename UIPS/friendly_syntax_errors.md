@@ -91,7 +91,7 @@ TBD
   TODO: Remove this comment before submitting
 -->
 
-No backward compatibility issues found.
+Not backward compatible due to type change of `edge` and some other proposed changes.
 
 
 ## Security Considerations
